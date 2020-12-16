@@ -1,7 +1,6 @@
 package com.abo.joke.controllers;
 
 import com.abo.joke.services.JokeService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -11,7 +10,6 @@ public class JokeController {
 
     private final JokeService jokeService;
 
-    @Autowired
     public JokeController(JokeService jokeService) {
         this.jokeService = jokeService;
     }
